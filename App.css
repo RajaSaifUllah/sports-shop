@@ -1,0 +1,142 @@
+/* Styles for the fire animation */
+@keyframes fire {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(-45deg, #f06, yellow, #f06, yellow, #f06, yellow);
+  background-size: 400% 100%;
+  animation: fire 5s infinite alternate;
+}
+
+
+
+  
+  
+  header h1 {
+    background-color:blanchedalmond;
+    color:blue;
+    padding: 5px;
+    font-size: 24px;
+    width:20%;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display:inline-flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    width:50%;
+  }
+  
+  nav li {
+    margin: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  nav li:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Add this to change cursor to pointer */
+  nav li:hover {
+    cursor: pointer;
+  }
+  
+.home{
+    text-align: center;
+    color:darkred
+}
+.cricket{
+    text-align: center;
+    color:darkcyan
+}
+.football{
+    text-align: center;
+    color:darkgoldenrod
+}
+.hockey{
+    text-align: center;
+    color:darkblue
+}
+/* Add this CSS to your stylesheet */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin-right: 10px;
+}
+
+.nav-icon-container {
+  position:fixed;
+  top: 0;
+  right: 0;
+  padding: 10px; /* Adjust the padding as needed */
+}
+
+.nav-icon {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  /* Add any other styles you want for the icon */
+}
+/* Home.css */
+.welcome-heading {
+  color: blue;
+  text-align: left;
+  background-color: blanchedalmond;
+  width: 30%;
+  position: relative;
+  animation: moveUpDown 3s ease infinite, shine 2s ease infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(-5px); /* Adjust the distance and timing as needed */
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-color: blanchedalmond;
+    box-shadow: none;
+  }
+  50% {
+    background-color: orange; /* Adjust the shining color as needed */
+    box-shadow: 0 0 20px orange; /* Add a shining effect with a box-shadow */
+  }
+  100% {
+    background-color: blanchedalmond;
+    box-shadow: none;
+  }
+}
+
+/* Other styles for the content */
+.content {
+  display: flex;
+  align-items: center;
+}
+
+/* Add other styles as needed */
