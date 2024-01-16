@@ -1,0 +1,118 @@
+
+/* Football.css */
+
+/* Style for the container */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 17px;
+    justify-items: center;
+    align-items: start;
+    margin-top: 20px;
+  }
+  
+  /* Style for each image item */
+  .image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    height: 300px; /* Adjust the height as needed */
+  }
+  
+  /* Style for the football image */
+  .football-image {
+    width: 70px;
+    max-height: 45px; /* Adjust the maximum height as needed */
+    object-fit: cover;
+  }
+  
+  /* Style for the item details */
+  .item-details {
+    margin-top: 10px;
+  }
+  
+  /* Style for the item title */
+  .item-details h3 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Style for the description text */
+  .item-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Style for the Buy Now button */
+  .item-details button {
+    background-color: skyblue;
+    color: red;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for the Buy Now button */
+  .item-details button:hover {
+    background-color: pink;
+  }
+  
+  /* Add styles for the football icon */
+  .football-icon {
+    vertical-align: middle; /* To vertically align with text */
+    margin-right: 10px; /* Add spacing between icon and text */
+  }
+  
+  /* Style for the small heading */
+  .small-heading {
+    font-size: 20px; /* Adjust the font size as needed */
+    color: blue; /* Text color */
+    background-color: transparent; /* Make the background transparent for text */
+    display: inline-block; /* To make the background only affect the text content */
+    background-color: blanchedalmond;
+  }
+  
+  /* Style for the small icon */
+  .small-icon {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add spacing between icon and text */
+  }
+  
+  /* Style for the description text */
+  .description-text {
+    color: #007bff; /* Change the color to your desired color */
+  }
+  
+  .price-text {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: green; /* Change the color to your desired color */
+    margin: 5px 0;
+  }
+  
+  .description-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .small-heading{
+    animation: upDownAnimation 2s alternate infinite;
+  }
+  
+  @keyframes upDownAnimation {
+    0% {
+      transform: translatex(0);
+    }
+    100% {
+      transform: translatex(10px); /* Adjust the distance as needed */
+    }
+  }
+  
