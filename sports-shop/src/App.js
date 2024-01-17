@@ -8,7 +8,7 @@ import Cricket from './Cricket';
 import Football from './Football';
 import Hockey from './Hockey';
 import './App.css';
-import { HelmetProvider } from 'react-helmet-async';
+
 
 
 function App() {
@@ -36,13 +36,6 @@ function App() {
   return (
     
     <div className="App">
-       <HelmetProvider>
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        />
-      </HelmetProvider>
       <Header />
       <Navigation handleNavigation={handleNavigation} />
       {renderPage()}
