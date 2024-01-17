@@ -2,7 +2,7 @@
 /* Cricket.css */
 
 /* Style for the container */
-@import "~font-awesome/css/font-awesome.min.css";
+/*@import "~font-awesome/css/font-awesome.min.css";*/
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
