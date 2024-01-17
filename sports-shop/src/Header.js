@@ -5,7 +5,7 @@ import './App.css'; // Import the CSS file for styling
 const Header = () => {
   return (
     <header>
-      <h1 className="header-title">Sports---Shop</h1>
+      <h1 className="header-title">Sports Shop</h1>
     </header>
   );
 };
